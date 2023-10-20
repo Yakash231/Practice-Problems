@@ -1,0 +1,20 @@
+// Loops
+#include<stdio.h>
+int main(){
+    printf("Fibonacci Series:");
+    int t1=0,t2=1;
+    int nextterm,n;
+    printf("Enter The Number Of Terms:");
+    scanf("%d",&n);
+    nextterm=t1+t2;
+    printf("%d,%d",t1,t2);
+    for(int i=3;i<=n;i++)
+    {
+        t1=t2;
+        t2=nextterm;
+        nextterm=t1+t2;
+    printf("%d ,",nextterm);
+    }
+    return 0;
+
+}
